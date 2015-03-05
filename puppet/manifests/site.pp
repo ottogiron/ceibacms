@@ -1,0 +1,4 @@
+include 'node'
+
+class { 'ceibanode':
+}
