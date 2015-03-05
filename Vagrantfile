@@ -13,10 +13,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   config.vm.synced_folder ".", "/ceibacms"
-  config.vm.hostname = "ceibacms"
+  config.vm.hostname = "ceibacms.dev"
 
   #Provisioning
-  #config.vm.provision :shell, :inline => "sudo apt-get update"
+  config.vm.provision :shell, :inline => "sudo apt-get update"
 
   config.vm.provision "puppet" do |puppet|
     puppet.manifests_path = "puppet/manifests"
