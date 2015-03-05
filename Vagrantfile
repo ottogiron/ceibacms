@@ -13,6 +13,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/trusty64"
 
   config.vm.synced_folder ".", "/ceibacms"
+  config.vm.hostname = "ceibacms"
 
   #Provisioning
   #config.vm.provision :shell, :inline => "sudo apt-get update"
