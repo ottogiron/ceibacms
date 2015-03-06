@@ -13,6 +13,8 @@
     "jcr"
   ],
   "license": "MIT",
-  "private": true
-
+  "private": true,
+  "dependencies": {
+    "requirejs": "~2.1.16"
+  }
 }
