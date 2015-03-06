@@ -1,0 +1,30 @@
+{
+  "name": "ceibacms-jcr",
+  "version": "0.1.0",
+  "description": "Core JCR module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ottogiron/ceibacms"
+  },
+  "keywords": [
+    "cms",
+    "nodejs",
+    "jcr",
+    "webcomponents",
+    "angularjs"
+  ],
+  "author": "Otto Giron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ottogiron/ceibacms/issues"
+  },
+  "homepage": "https://github.com/ottogiron/ceibacms",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "mocha": "^2.1.0"
+  }
+}

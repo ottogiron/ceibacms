@@ -2,3 +2,4 @@
 puppet/.tmp/
 puppet/modules/
 puppet/.librarian/
+node_modules
