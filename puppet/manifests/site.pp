@@ -5,6 +5,24 @@ class ceibanode {
     version => 'v0.12.0',
   }
 
+  package { 'yo':
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'grunt-cli':
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+  package { 'bower':
+    provider => 'npm',
+    require  => Class['nodejs'],
+  }
+
+
+
+
 }
 
 
