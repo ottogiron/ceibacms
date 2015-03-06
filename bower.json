@@ -1,0 +1,18 @@
+{
+  "name": "ceibacms",
+  "version": "0.1.0",
+  "homepage": "https://github.com/ottogiron/ceibacms",
+  "authors": [
+    "Otto Giron <ottog2486@gmail.com>"
+  ],
+  "description": "Web Components / NodeJS CMS",
+  "keywords": [
+    "nodejs",
+    "cms",
+    "webcomponets",
+    "jcr"
+  ],
+  "license": "MIT",
+  "private": true,
+
+}
