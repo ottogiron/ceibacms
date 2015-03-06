@@ -75,5 +75,6 @@ node 'ceibacms.dev' {
   include ceibamongo
   include ceibanode
   include ceibajava
+  include git
 
 }
