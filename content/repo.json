@@ -1,0 +1,23 @@
+{
+  "/": {
+    "modules": {
+      "user": {
+        "pioneer": {
+          "components": {
+            "article": {
+              "title": "Article Component",
+              "type": "webcomponent",
+              "category": "Blog"
+            }
+          },
+          "templates": {
+            "home": {
+              "title": "Blog Home",
+              "type": "webcomponent"
+            }
+          }
+        }
+      }
+    }
+  }
+}
