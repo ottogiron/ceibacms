@@ -1,21 +1,30 @@
 {
-  "/": {
-    "modules": {
-      "user": {
-        "pioneer": {
-          "components": {
-            "article": {
-              "title": "Article Component",
-              "type": "webcomponent",
-              "category": "Blog"
-            }
-          },
-          "templates": {
-            "home": {
-              "title": "Blog Home",
-              "type": "webcomponent"
-            }
+  "modules": {
+    "user": {
+      "pioneer": {
+        "components": {
+          "article": {
+            "title": "Article Component",
+            "ctype": "webcomponent",
+            "category": "Blog"
           }
+        },
+        "templates": {
+          "home": {
+            "title": "Blog Home",
+            "ctype": "webcomponent"
+          }
+        }
+      }
+    }
+  },
+  "content": {
+    "sites": {
+      "pioneer": {
+        "content": {
+          "ctype": "page",
+          "template": "/modules/user/pioneer/templates/home",
+          "engine": "handlebars"
         }
       }
     }
