@@ -7,11 +7,11 @@ var store;
 /* GET users listing. */
 router.get('/:path(*\.html)', function(req, res, next) {
   var pageNodePath = getNodePath(req.path);
-  var pageNode = store.getNode(pageNodePath);
+  var pageNode = store.getNode(pageNodePath);  
   var engine = pageNode.content.engine;
   var templateEngine = templateEngines[engine];
   templateEngine(pageNode,function(err, html){
-    res.send(html);    
+    res.send(html);
   });
 
 });
