@@ -5,11 +5,7 @@ var store = new Confidence.Store();
 var options;
 
 
-
-
-
 function getNode(path){
-  console.log('The path is:', path, ' and the conten is', store.get(path));  
    return store.get(path);
 }
 

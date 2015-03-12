@@ -25,6 +25,9 @@
           "ctype": "page",
           "template": "/modules/user/pioneer/templates/home",
           "engine": "handlebars"
+        },
+        "properties": {
+          "title": "My First Home Page :D"
         }
       }
     }
