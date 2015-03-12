@@ -20,7 +20,10 @@ class ceibanode {
     require  => Class['nodejs'],
   }
 
-
+  package { 'nodemon':
+    provider => 'npm',
+    require => Class['nodejs']
+  }
 
 
 }
