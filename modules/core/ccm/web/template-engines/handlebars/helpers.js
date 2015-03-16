@@ -9,7 +9,7 @@ var includeComponentHelper = function(options){
    var componentName = pathTokens[pathTokens.length -1];
    var webComponentName = moduleName + '-' + componentName;
    return new Handlebars.SafeString(
-     "<" + webComponentName + "><" + webComponentName + "/>"
+     "<" + webComponentName + "></" + webComponentName + ">"
    );
 };
 
