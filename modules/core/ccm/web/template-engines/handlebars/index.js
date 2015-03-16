@@ -10,13 +10,16 @@ function registerHelpers(){
   });
 }
 
-module.exports = function(pageNode, cb) {
+module.exports = function(pageNode, store, cb) {
   registerHelpers();
-  
+
   templateManager.loadTemplate(pageNode, function(err, htmlSource){
     if(err){return cb(err);}
+    var dependencies = [];
     var context = {
-      page: pageNode
+      page: pageNode,
+      dependencies: dependencies,
+      store: store
     };
     var template = Handlebars.compile(htmlSource);
     var html = template(context);
