@@ -27,7 +27,7 @@ function wireDependencies(html, dependencies){
 
   //TODO: This should depende on the component type webcompoent, angular, etc
   dependencies.forEach(function(dependencyPath){
-    $head.prepend('<link rel="import" href="'+ dependencyPath +'" >');
+    $head.prepend('<link rel="import" href="'+ dependencyPath +'/component.html" >');
   });
 
   return '<html>'+ $html.html() + '<html>';

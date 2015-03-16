@@ -6,7 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var ceibaTemplateEngine = require('../modules/core/ccm/web/template-engines/ceiba');
 var contentRoute = require('../modules/core/ccm/web/routes/content');
-var staticRoute = require('../modules/core/ccm/web/routes/static')
+var staticRoute = require('../modules/core/ccm/web/routes/static');
+var componentsRoute = require('../modules/core/ccm/web/routes/components');
 
 var app = express();
 
@@ -23,8 +24,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/static', staticRoute())
-
+app.use('/static', staticRoute());
+app.use('/modules/user', componentsRoute());
 app.use('/content', contentRoute(
   {
     templateEngines: {
