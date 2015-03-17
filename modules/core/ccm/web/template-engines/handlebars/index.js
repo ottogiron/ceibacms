@@ -26,9 +26,10 @@ function wireDependencies(html, dependencies){
   var $head = $html.find('head');
 
   //TODO: This should depende on the component type webcompoent, angular, etc
-  dependencies.forEach(function(dependencyPath){
+  Object.keys(dependencies).forEach(function(dependencyPath){
     $head.prepend('<link rel="import" href="'+ dependencyPath +'/component.html" >');
   });
+  $head.prepend('<script src="/static/bower_components/webcomponentsjs/webcomponents.min.js"></script>');
 
   return '<html>'+ $html.html() + '<html>';
 
@@ -39,7 +40,7 @@ module.exports = function(pageNode, store, cb) {
 
   templateManager.loadTemplate(pageNode, function(err, htmlSource){
     if(err){return cb(err);}
-    var dependencies = [];
+    var dependencies = {};
     var context = {
       page: pageNode,
       dependencies: dependencies,

@@ -16,6 +16,7 @@
   "private": true,
   "dependencies": {
     "requirejs": "~2.1.16",
-    "polymer": "Polymer/polymer#~0.5.5"
+    "polymer": "Polymer/polymer#~0.5.5",
+    "webcomponentsjs": "~0.5.5"
   }
 }

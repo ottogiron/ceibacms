@@ -11,7 +11,7 @@ var includeComponentHelper = function(options){
    var moduleName = pathTokens[3];
    var componentName = pathTokens[pathTokens.length -1];
    var webComponentName = moduleName + '-' + componentName;
-   data.dependencies.push(ctype);
+   data.dependencies[ctype] = 1;
    return new Handlebars.SafeString(
      "<" + webComponentName + "></" + webComponentName + ">"
    );
