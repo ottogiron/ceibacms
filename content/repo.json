@@ -28,7 +28,7 @@
           "engine": "handlebars"
         },
         "properties": {
-          "title": "My First Home Page :D",
+          "title": "Pioneer Site",
           "body": "this is the first page :D"
         },
         "home": {
@@ -39,7 +39,7 @@
             "engine": "handlebars"
           },
           "properties": {
-            "title": "This is the real home page :D",
+            "title": "Home",
             "body": "My Home page rockes"
           }
         }
